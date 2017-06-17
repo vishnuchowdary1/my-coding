@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		int h,m,s;
+		Scanner sc=new Scanner(System.in);
+		h=sc.nextInt();
+		m=sc.nextInt();
+		h=h*60*60;
+		m=m*60;
+		s=h+m;
+		System.out.println(s);
+	}
+}
