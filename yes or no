@@ -5,11 +5,11 @@ public class Hello {
 		//Your Code Here
 Scanner sc=new Scanner(System.in);
 String c=sc.nextLine();
-if(c.equalsIgnorecase("y"))
+if(c.equalsIgnoreCase("y"))
 {
     System.out.println("yes");
 }
-else if(c.equalsIgnorecase("n"))
+else if(c.equalsIgnoreCase("n"))
 {
     System.out.println("no");
 }
