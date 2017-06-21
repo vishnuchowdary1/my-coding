@@ -1,0 +1,65 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args)
+    {
+		//Your Code Here
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c[]=new int[1000000];
+int d[]=new int[1000000];
+int e[]=new int[2000000];
+int i,j=0,k=0;
+for(i=a;i<=b;i++)
+{
+    if((i%2)!=0)
+    {
+        d[j]=i;
+        j++;
+    }
+}
+for(i=b;i>=a;i--)
+{
+    if((i%2)==0)
+    {
+       c[k]=i;
+       k++;
+    }
+}
+int n=0,m=0;
+int l=j+k;
+if(((a%2)==0)&&((b%2)==0))
+{
+    for(i=0;i<(l);i++)
+    {
+        e[i]=c[m];
+        m++;
+        if(n<=k)
+        {
+            i++;
+            e[i]=d[n];
+            n++;
+        }
+    }
+}
+else
+{
+    for(i=0;i<(l);i++)
+    {
+        e[i]=d[m];
+        m++;
+        if(n<=j)
+        {
+            i++;
+            e[i]=c[n];
+            n++;
+        }
+    }
+}
+for(i=0;i<l;i++)
+{
+    System.out.print(e[i]+" ");
+}
+}
+	}
