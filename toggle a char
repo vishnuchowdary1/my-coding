@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+Scanner sc=new Scanner(System.in);
+char c=sc.next().charAt(0);
+char b;
+System.out.print(c+"-");
+if(Character.isUpperCase(c))
+{
+    b=Character.toLowerCase(c);
+}
+else{
+    b=Character.toUpperCase(c);
+}
+System.out.print(b);
+	}
+}
